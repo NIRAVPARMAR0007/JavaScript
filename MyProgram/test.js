@@ -1,49 +1,22 @@
-console.log("Hi!, I am JavaScript")
+// // Stack(primitive) , Heap(Non-primitive)
 
-let name = "Nirav"
-var email = "np123@gmail.com" // can't using out of block
-const id = 14 // can't change
+// let name = "nirav"
+// let fullname = name
 
-{
-    let name = "Jignesh"
-}
+// fullname = "nirav parmar"
 
-email = "jp@gmail.com"
+// console.log(name)
+// console.log(fullname)
 
-console.table([name, email, id])
+// let name1 = {
+//     id:1,
+//     email:2
+// }
 
-// primitive
+// let name2 = name1
 
-// 7 types : String,  number, boolean, null, undefined, symbol, BigInt
+// name2.email = "3"
 
-let name1 = null;
+// console.log(name1)
+// console.log(name2)
 
-const id1 = Symbol('123')
-const anotherid = Symbol('123')
-
-// console.log(id == anotherid)
-
-const bign = 122345678901234567890n
-
-// Non-primitive(reference)
-
-// Array, Objects, Functions
-
-// console.log(typeof bign)
-
-const myFunction = function(){
-    console.log("Hello World!")
-}
-
-// console.log(typeof myFunction) // typepf is object function
-
-const hero = ["nirav", "np", "pn"]
-
-// console.log(typeof id)
-
-const sym1 = Symbol();
-const sym2 = Symbol("foo");
-const sym3 = Symbol("foo");
-
-
-console.log(sym2 === sym3); // false
